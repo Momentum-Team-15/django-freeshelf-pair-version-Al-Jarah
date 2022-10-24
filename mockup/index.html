@@ -1,3 +1,4 @@
+{% extends 'base.html' %} {}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,7 +71,9 @@
         </p>
         <div class="flex">
           <div class="mr2 pr2 bw1 br green">
-            Favorited 7 times
+            {% if album.favorite == True %}
+                <p>⭐️</p>
+            {% endif %}
           </div>
           <div class="mr2 pr2 bw1 br">
             added 2018-10-30
