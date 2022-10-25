@@ -21,7 +21,6 @@ If a user is not logged in, they should see the log in page (a form to log in).
 
 ### Start here
 The user should be able to click on links to log in or register, and to log out if they are logged in.
-
 ### Goal 2: resources
 
 Your next goal should be creating a Resource model and showing an index of all resources on the homepage. It will be helpful to sketch out this model before creating it. Some details:
