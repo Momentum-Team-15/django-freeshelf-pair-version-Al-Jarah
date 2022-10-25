@@ -30,3 +30,16 @@ def edit(request, pk):
     else:
         form = NameForm(instance=resources)
     return render(request, 'core/edit.html', {'form': form})
+
+def delete(request, pk):
+    resources = get_object_or_404(Resources, pk=pk)
+    if request.method == "POST":
+        form = NameForm(request.POST, request.FILES, instance=resources)
+        if form.is_valid():
+            form = form.save()
+            form.user = request.user
+            form.created_at = timezone.now()
+            return redirect('home', pk=form.pk)
+    else:
+        form = NameForm(instance=resources)
+    return render(request, 'core/delete.html', {'form': form})
