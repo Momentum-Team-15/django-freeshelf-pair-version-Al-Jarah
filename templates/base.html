@@ -9,6 +9,14 @@
     <title></title>
 </head>
 <body>
+    <header class="flex items-center justify-between bg-green white ph3">
+        <div id="title">
+          <h1 class="white">Freeshelf</h1>
+        </div>
+        <div id="account-menu">
+          <a class="washed-blue" href={% url 'auth_login' %}>Login</a> | <a class="washed-blue" href={% url 'registration_register' %}>Register</a>
+        </div>
+      </header>
     {% block content %}
     
     {% endblock %}
