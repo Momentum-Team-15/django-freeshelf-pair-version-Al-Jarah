@@ -20,4 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('registration.backends.simple.urls')),
     path('', views.home, name="home"),
+    path('resources/<int:pk>/edit/', views.edit, name='edit'),
+    path('resources/<int:pk>/delete', views.delete, name='delete'),
 ]
