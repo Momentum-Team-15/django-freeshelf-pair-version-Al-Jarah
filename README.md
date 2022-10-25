@@ -25,9 +25,10 @@ The user should be able to click on links to log in or register, and to log out 
 Your next goal should be creating a Resource model and showing an index of all resources on the homepage. It will be helpful to sketch out this model before creating it. Some details:
 
 - Resources have, at a minimum, a title, author, description, URL, and date added to the database (`created_at`).
-## We are here ##
-- Resource URLs (the URL field in the database) should be unique.
-- Admins can add, edit, and delete resources.
+- Resource URLs (the URL field in the database) should be unique. 
+- Admins can add, edit, and delete resources. 
+## We are here !!!!!!!!!!!!!!!!!!!!##
+still need to add more feilds to the datbase 
 - You should have initial data for resources (a CSV is provided, but you can edit it to fit your data).
 - Resources should be displayed in order with the most recently added at the top.
 - Users should be logged in to be able to see the list of resources on the homepage. That can be accomplished using the `@login_required` decorator explained in this [article](https://realpython.com/django-view-authorization/#restricting-views-to-logged-in-users).
