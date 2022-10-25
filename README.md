@@ -19,13 +19,13 @@ registration and login to your application using `django-registration-redux`. *R
 
 If a user is not logged in, they should see the log in page (a form to log in).
 
-### Start here
 The user should be able to click on links to log in or register, and to log out if they are logged in.
 ### Goal 2: resources
 
 Your next goal should be creating a Resource model and showing an index of all resources on the homepage. It will be helpful to sketch out this model before creating it. Some details:
 
 - Resources have, at a minimum, a title, author, description, URL, and date added to the database (`created_at`).
+## We are here ##
 - Resource URLs (the URL field in the database) should be unique.
 - Admins can add, edit, and delete resources.
 - You should have initial data for resources (a CSV is provided, but you can edit it to fit your data).
