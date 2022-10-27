@@ -27,8 +27,6 @@ Your next goal should be creating a Resource model and showing an index of all r
 - Resources have, at a minimum, a title, author, description, URL, and date added to the database (`created_at`).
 - Resource URLs (the URL field in the database) should be unique. 
 - Admins can add, edit, and delete resources. 
-## We are here !!!!!!!!!!!!!!!!!!!!##
-still need to add more feilds to the datbase 
 - You should have initial data for resources (a CSV is provided, but you can edit it to fit your data).
 - Resources should be displayed in order with the most recently added at the top.
 - Users should be logged in to be able to see the list of resources on the homepage. That can be accomplished using the `@login_required` decorator explained in this [article](https://realpython.com/django-view-authorization/#restricting-views-to-logged-in-users).
@@ -46,6 +44,7 @@ You can also create resources in the database using the Django admin.
 
 ### Goal 3: associated categories
 
+## We are here !!!!!!!!!!!!!!!!!!!!##
 Your next goal should be adding categories for resources. Each resource should be associated with a category.
 
 - Categories have a title and a [slug](https://docs.djangoproject.com/en/4.0/ref/models/fields/#slugfield).

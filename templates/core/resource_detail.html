@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2> Resource info</h2>
+
+<h3> {{resource.title}}</h3>
+
+<h3> {{resource.author}}</h3>
+
+<p> {{resource.description}}</p>
+<p> <a href={{resource.url}}>Link to Resource</a></p>
+
+<p><a href="{% url 'edit' pk=resource.pk %}">Edit</a></p>
+<p><a href="{% url 'delete' pk=resource.pk %}">Delete</a></p>
+
+{% endblock %}

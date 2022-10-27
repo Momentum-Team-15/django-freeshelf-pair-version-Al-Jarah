@@ -1,4 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
+<h1>Resources</h1>
+<div class="container">
+    
+</div>
+{% for resource in resources %}
 
-{% endblock %}
+
+<h4><a href="{{ resource.url }}">{{ resource.title }}</a> by  {{ resource.author}}</h4>
+{{resource.title}}
+{{resource.description}}
+{% endfor %}
+
+{% endblock %} 

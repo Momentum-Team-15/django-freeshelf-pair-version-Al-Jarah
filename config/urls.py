@@ -19,7 +19,13 @@ from core import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('registration.backends.simple.urls')),
+    # path('accounts/logout/', views.logout, name="logout"),
+    # path('accounts/login/', views.login, name="login"),
     path('', views.home, name="home"),
-    path('resources/<int:pk>/edit/', views.edit, name='edit'),
-    path('resources/<int:pk>/delete', views.delete, name='delete'),
+    path('resource/<int:pk>/edit/', views.edit, name='edit'),
+    path('resource/<int:pk>/delete', views.delete, name='delete'),
+    # path('resource/new', views.create_resource, name='create_resource'),
+    path('resource/<slug:slug>/', views.resource_detail, name="resource_detail"),
+    path('resource/<slug:slug>/', views.category_detail, name="categories_detail"),
+    path('favorite/new/<int:res_pk>', views.resource_detail, name="favorite"),
 ]

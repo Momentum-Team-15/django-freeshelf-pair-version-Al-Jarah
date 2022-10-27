@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <div>
-    <form action="{% url 'edit_book' pk=book.pk %}" method="POST">
+    <form action="{% url 'edit_book' pk==core.pk %}" method="POST">
       {% csrf_token %}
       {{ form.as_p }}
       <div>
